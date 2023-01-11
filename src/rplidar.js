@@ -11,7 +11,7 @@ function wait(time) {
     });
 }
 
-const DEFAULT_SERIALPORT_PATH = 'COM3'; // /dev/ttyUSB0
+const DEFAULT_SERIALPORT_PATH = process.env.LIDAR_TRY || 'COM3'; // /dev/ttyUSB0
 
 const START_FLAG = 0xA5;
 const START_FLAG2 = 0x5A;
